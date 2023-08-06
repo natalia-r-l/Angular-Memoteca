@@ -1,0 +1,66 @@
+<section class="container create-notes ff-inter">
+  <header class="header">
+      <h2>Adicione um <br> pensamento novo:</h2>
+  </header>
+  <form>
+    <label for="note">Anotação</label>
+    <input type="textarea" class="input" id="note" name="note" placeholder="Digite a anotação" [(ngModel)]="note.content">
+    <label for="author">Autoria</label>
+    <input type="text" class="input" id="author" name="author" placeholder="Digite o autor" [(ngModel)]="note.author">
+    <label form="model">Selecione o modelo do card: </label>
+    <div class="container-radio">
+      <div class="radio-model">
+        <label for="model1">
+          <input type="radio" id="model1" value="model1" name="model-card"  [(ngModel)]="note.model">
+
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>Modelo 1</span>
+      </label>
+      Prévia:
+      <div class="model model1 ff-roboto-mono">
+        <img src="../../../../assets/imagens//modelo1.png" alt="Imagem de aspas azuis">
+        <p class="content"> {{ note.content }} </p>
+        <p class="author"><b> {{ note.author }} </b></p>
+      </div>
+      </div>
+      <div class="radio-model">
+        <label for="model2">
+          <input type="radio" id="model2" value="model2" name="model-card" [(ngModel)]="note.model">
+
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>Modelo 2</span>
+      </label>
+      Prévia:
+      <div class="model model2 ff-roboto-mono">
+        <img src="../../../../assets/imagens//modelo2.png" alt="Imagem de aspas azuis claras">
+        <p class="content"> {{ note.content }} </p>
+        <p class="author"><b> {{ note.author }} </b></p>
+      </div>
+      </div>
+      <div class="radio-model">
+        <label for="model3">
+          <input type="radio" id="model3" value="model3" name="model-card"  [(ngModel)]="note.model">
+
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>Modelo 3</span>
+      </label>
+      Prévia:
+      <div class="model model3 ff-roboto-mono">
+        <img src="../../../../assets/imagens//modelo3.png" alt="Imagem de aspas verdes">
+        <p class="content"> {{ note.content }} </p>
+        <p class="author"><b> {{ note.author }}</b></p>
+      </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button (click)="createNote()" class="button">Salvar</button>
+      <button (click)="cancelNote()" class="button">Cancelar</button>
+    </div>
+  </form>
+</section>

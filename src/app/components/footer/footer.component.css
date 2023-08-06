@@ -5,19 +5,19 @@ footer {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "TextoCopyright LogoRodape .";
+    "TextCopyright LogoFooter .";
   align-items: center;
   padding: 1rem 2rem;
 }
 
-.TextoCopyright {
+.TextCopyright {
   justify-self: center;
-  grid-area: TextoCopyright;
+  grid-area: TextCopyright;
 }
 
-.LogoRodape {
+.LogoFooter {
   justify-self: center;
-  grid-area: LogoRodape;
+  grid-area: LogoFooter;
 }
 
 footer small {
@@ -25,11 +25,11 @@ footer small {
 }
 
 @media (max-width: 576px) {
-  .cabecalho .logo {
+  .header .logo {
     padding: 2rem;
   }
 
-  .cabecalho p {
+  .header p {
     font-size: 1.5rem
   }
 }
