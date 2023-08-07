@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class CreateNoteComponent implements OnInit {
 
   note = {
-    id: '1',
-    content: 'Aprendendo....',
-    author: 'Eu',
-    model: 'model3',
+    id: '',
+    content: '',
+    author: '',
+    model: '',
   }
 
   constructor() { }

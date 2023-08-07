@@ -7,12 +7,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateNoteComponent } from './components/notes/create-note/create-note.component';
 import { FormsModule } from '@angular/forms';
+import { ListNotesComponent } from './components/notes/list-notes/list-notes.component';
+import { CardNoteComponent } from './components/notes/card-note/card-note.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent, FooterComponent, CreateNoteComponent,
+    HeaderComponent, FooterComponent, CreateNoteComponent, ListNotesComponent, CardNoteComponent,
   ],
   imports: [
     BrowserModule,

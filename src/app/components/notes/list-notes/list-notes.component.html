@@ -1,0 +1,16 @@
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Meu mural</h2>
+    <button routerLink="/createNote" class="button">Adicionar pensamento</button>
+  </header>
+  <div class="panel" *ngIf="notesList.length > 0, else withoutNotes">
+    <div *ngFor="let note of notesList">
+      <app-card-note [note]="note" ></app-card-note>
+    </div>
+  </div>
+</section>
+<ng-template #withoutNotes>
+  <div class="ff-inter without-notes">
+    <p>Ainda não há nada cadastrado! </p>
+  </div>
+</ng-template>
