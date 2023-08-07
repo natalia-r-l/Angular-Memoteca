@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Note } from '../note';
 
 @Component({
   selector: 'app-card-note',
@@ -7,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardNoteComponent implements OnInit {
 
-  @Input() note = {
+  @Input() note: Note = {
+    id: 0,
     content:'',
     author:'',
     model: ''
