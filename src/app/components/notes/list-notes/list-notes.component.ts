@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Note } from '../note';
+import { NoteService } from '../note.service';
 
 @Component({
   selector: 'app-list-notes',
@@ -10,9 +11,12 @@ export class ListNotesComponent implements OnInit {
 
   notesList: Note[] = [];
 
-  constructor() { }
+  constructor(private service: NoteService) { }
 
   ngOnInit(): void {
+    this.service.list().subscribe((notesList) => {
+      this.notesList = notesList
+    })
   }
 
 }

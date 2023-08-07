@@ -1,6 +1,5 @@
-export interface Note
-{
-  id: number
+export interface Note {
+  id?: number
   content: string
   author: string
   model: string

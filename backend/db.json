@@ -17,6 +17,18 @@
       "content": "Angular é muito legal",
       "author": "Nat",
       "model": "model3"
+    },
+    {
+      "content": "Testando a funcionalidade de cadastrar",
+      "author": "Nat",
+      "model": "model2",
+      "id": 2
+    },
+    {
+      "content": "Testa o router ",
+      "author": "Nat",
+      "model": "model3",
+      "id": 3
     }
   ]
 }

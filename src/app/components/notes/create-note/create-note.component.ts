@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Note } from '../note';
+import { NoteService } from '../note.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-note',
@@ -9,22 +11,26 @@ import { Note } from '../note';
 export class CreateNoteComponent implements OnInit {
 
   note : Note = {
-    id: 0,
     content: '',
     author: '',
     model: '',
   }
 
-  constructor() { }
+  constructor(
+    private service: NoteService,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
 
   createNote(){
-    alert("Novo pensamento criado!");
+    this.service.createNote(this.note).subscribe(() => {
+      this.router.navigate(['/listNotes'])
+    })
   }
 
   cancelNote(){
-    alert("Operação cancelada!");
+    this.router.navigate(['/listNotes'])
   }
 }

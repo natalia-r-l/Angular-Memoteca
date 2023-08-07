@@ -9,6 +9,7 @@ import { CreateNoteComponent } from './components/notes/create-note/create-note.
 import { FormsModule } from '@angular/forms';
 import { ListNotesComponent } from './components/notes/list-notes/list-notes.component';
 import { CardNoteComponent } from './components/notes/card-note/card-note.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CardNoteComponent } from './components/notes/card-note/card-note.compon
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
