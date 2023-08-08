@@ -29,4 +29,10 @@ export class NoteService {
     return this.http.get<Note>(url)
   }
 
+  update(note: Note): Observable<Note> {
+    const url = `${this.API}/${note.id}`
+    return this.http.put<Note>(url, note )
+  }
 }
+
+
