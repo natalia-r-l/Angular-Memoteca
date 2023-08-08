@@ -10,12 +10,13 @@ import { FormsModule } from '@angular/forms';
 import { ListNotesComponent } from './components/notes/list-notes/list-notes.component';
 import { CardNoteComponent } from './components/notes/card-note/card-note.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalDeleteComponent } from './components/notes/modal-delete/modal-delete.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent, FooterComponent, CreateNoteComponent, ListNotesComponent, CardNoteComponent,
+    HeaderComponent, FooterComponent, CreateNoteComponent, ListNotesComponent, CardNoteComponent, ModalDeleteComponent,
   ],
   imports: [
     BrowserModule,

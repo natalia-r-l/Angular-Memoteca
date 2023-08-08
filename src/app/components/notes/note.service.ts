@@ -19,5 +19,14 @@ export class NoteService {
     return this.http.post<Note>(this.API, note);
   }
 
+  delete(id: number):Observable<Note>{
+    const url = `${this.API}/${id}`
+    return this.http.delete<Note>(url)
+  }
+
+  filterById(id: number): Observable<Note>{
+    const url = `${this.API}/${id}`
+    return this.http.get<Note>(url)
+  }
 
 }

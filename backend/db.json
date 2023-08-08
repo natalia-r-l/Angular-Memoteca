@@ -2,12 +2,6 @@
   "note": [
     {
       "id": 1,
-      "content": "Olá Angular",
-      "author": "Nat",
-      "model": "model1"
-    },
-    {
-      "id": 1,
       "content": "Estudando Angular",
       "author": "Nat",
       "model": "model2"
@@ -23,12 +17,6 @@
       "author": "Nat",
       "model": "model2",
       "id": 2
-    },
-    {
-      "content": "Testa o router ",
-      "author": "Nat",
-      "model": "model3",
-      "id": 3
     }
   ]
 }
