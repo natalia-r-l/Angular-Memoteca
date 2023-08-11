@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateNoteComponent } from './components/notes/create-note/create-note.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListNotesComponent } from './components/notes/list-notes/list-notes.component';
 import { CardNoteComponent } from './components/notes/card-note/card-note.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,7 +23,8 @@ import { EditNoteComponent } from './components/notes/edit-note/edit-note.compon
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

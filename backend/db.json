@@ -2,21 +2,15 @@
   "note": [
     {
       "id": 1,
-      "content": "Testando a funcionalidade atualizar",
-      "author": "Natália",
-      "model": "model2"
+      "content": "Angular é muito legal. Não é mesmo? ",
+      "author": "Nat",
+      "model": "model1"
     },
     {
-      "id": 1,
-      "content": "Angular é muito legal",
-      "author": "Nat",
-      "model": "model3"
-    },
-    {
-      "content": "Testando a funcionalidade de cadastrar",
-      "author": "Nat",
-      "model": "model2",
-      "id": 2
+      "content": "teste",
+      "author": "NAT",
+      "model": "model1",
+      "id": 3
     }
   ]
 }

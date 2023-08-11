@@ -2,16 +2,44 @@
   <header class="header">
       <h2>Adicione um <br> pensamento novo:</h2>
   </header>
-  <form>
+  <form [formGroup]="form">
     <label for="note">Anotação</label>
-    <input type="textarea" class="input" id="note" name="note" placeholder="Digite a anotação" [(ngModel)]="note.content">
+    <input
+      type="textarea"
+      class="input"
+      id="content"
+      formControlName="content"
+      placeholder="Digite a anotação" >
+      <div class="error-message" *ngIf="form.get('content')?.errors?.['required'] && form.get('content')?.touched">
+        Este campo é obrigatório.
+      </div>
+      <div class="error-message" *ngIf="form.get('content')?.errors?.['pattern'] && form.get('content')?.touched">
+        Este campo não aceita números.
+      </div>
     <label for="author">Autoria</label>
-    <input type="text" class="input" id="author" name="author" placeholder="Digite o autor" [(ngModel)]="note.author">
+    <input
+      type="text"
+      class="input"
+      id="author"
+      formControlName="author"
+      placeholder="Digite o autor" >
+      <div class="error-message" *ngIf="form.get('author')?.errors?.['required'] && form.get('author')?.touched">
+        Este campo é obrigatório.
+      </div>
+      <div class="error-message" *ngIf="form.get('author')?.errors?.['minlength'] && form.get('author')?.touched">
+        O nome do autor precisa ter no mínimo 3 caracteres.
+      </div>
+      <div class="error-message" *ngIf="form.get('author')?.errors?.['upperCase'] && form.get('author')?.touched">
+        Este campo aceita apenas letras maiúsculas.
+      </div>
+      <div class="error-message" *ngIf="form.get('author')?.errors?.['pattern'] && form.get('author')?.touched">
+        Este campo não aceita números.
+      </div>
     <label form="model">Selecione o modelo do card: </label>
     <div class="container-radio">
       <div class="radio-model">
         <label for="model1">
-          <input type="radio" id="model1" value="model1" name="model-card"  [(ngModel)]="note.model">
+          <input type="radio" id="model1" value="model1" formControlName="model" >
 
         <div class="custom-radio">
           <span></span>
@@ -21,13 +49,13 @@
       Prévia:
       <div class="model model1 ff-roboto-mono">
         <img src="../../../../assets/imagens//model1.png" alt="Imagem de aspas azuis">
-        <p class="content"> {{ note.content }} </p>
-        <p class="author"><b> {{ note.author }} </b></p>
+        <p class="content"> {{ form.get('content')?.value }} </p>
+        <p class="author"><b> {{ form.get('author')?.value }} </b></p>
       </div>
       </div>
       <div class="radio-model">
         <label for="model2">
-          <input type="radio" id="model2" value="model2" name="model-card" [(ngModel)]="note.model">
+          <input type="radio" id="model2" value="model2" formControlName="model" >
 
         <div class="custom-radio">
           <span></span>
@@ -37,13 +65,13 @@
       Prévia:
       <div class="model model2 ff-roboto-mono">
         <img src="../../../../assets/imagens//model2.png" alt="Imagem de aspas azuis claras">
-        <p class="content"> {{ note.content }} </p>
-        <p class="author"><b> {{ note.author }} </b></p>
+        <p class="content"> {{ form.get('content')?.value }} </p>
+        <p class="author"><b> {{ form.get('author')?.value }} </b></p>
       </div>
       </div>
       <div class="radio-model">
         <label for="model3">
-          <input type="radio" id="model3" value="model3" name="model-card"  [(ngModel)]="note.model">
+          <input type="radio" id="model3" value="model3" formControlName="model"  >
 
         <div class="custom-radio">
           <span></span>
@@ -53,14 +81,18 @@
       Prévia:
       <div class="model model3 ff-roboto-mono">
         <img src="../../../../assets/imagens//model3.png" alt="Imagem de aspas verdes">
-        <p class="content"> {{ note.content }} </p>
-        <p class="author"><b> {{ note.author }}</b></p>
+        <p class="content"> {{ form.get('content')?.value }} </p>
+        <p class="author"><b> {{ form.get('author')?.value }} </b></p>
       </div>
       </div>
     </div>
     <div class="actions">
-      <button (click)="createNote()" class="button">Salvar</button>
       <button (click)="cancelNote()" class="button">Cancelar</button>
+      <button
+        (click)="createNote()"
+        [disabled]="!form.valid"
+        [ngClass]="enableButton()"
+        >Salvar</button>
     </div>
   </form>
 </section>

@@ -55,6 +55,14 @@
   flex-wrap: wrap;
 }
 
+.error-message {
+  font-size: 12px;
+  margin-left: 5px;
+  color: red;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
 .models {
   display: flex;
   gap: 2.5rem;
@@ -132,4 +140,10 @@ input[type='radio']:checked+.custom-radio {
 
 input[type='radio']:checked+.custom-radio span {
   background: #154580;
+}
+
+.button-disabled {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
 }
