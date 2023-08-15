@@ -11,7 +11,7 @@ export class NoteService {
   private readonly API = 'http://localhost:3000/note'
   constructor(private http: HttpClient) { }
 
-  list(page: number): Observable<Note[]>{
+  list(page: number, filter: string): Observable<Note[]>{
 
     const itensPage = 6;
 
@@ -19,6 +19,9 @@ export class NoteService {
       .set("_page",  page)
       .set("_limit", itensPage)
 
+     if(filter.trim().length > 2){
+      params = params.set("q", filter)
+     }
      return this.http.get<Note[]>(this.API, { params })
   }
 

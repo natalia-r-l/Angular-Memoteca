@@ -1,5 +1,16 @@
 <section class="container">
   <header class="header d-flex">
+    <div class="search-notes">
+      <input
+        type="search"
+        class="filter"
+        placeholder="O que você procura?"
+        autofocus
+        [(ngModel)]="filter"
+        (keyup)="searchNotes()"
+        >
+        <img src="/assets/imagens/lupa.png" alt="Lupa de busca">
+    </div>
     <h2 class="ff-inter">Meu mural</h2>
     <button routerLink="/createNote" class="button">Adicionar pensamento</button>
   </header>
