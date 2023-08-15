@@ -9,6 +9,10 @@
     </div>
   </div>
 </section>
+<app-load-notes-button
+  [hasMoreNotes]="hasMoreNotes"
+  (click)="loadMoreNotes()">
+</app-load-notes-button>
 <ng-template #withoutNotes>
   <div class="ff-inter without-notes">
     <p>Ainda não há nada cadastrado! </p>

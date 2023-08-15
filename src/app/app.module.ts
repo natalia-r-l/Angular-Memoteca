@@ -12,12 +12,13 @@ import { CardNoteComponent } from './components/notes/card-note/card-note.compon
 import { HttpClientModule } from '@angular/common/http';
 import { ModalDeleteComponent } from './components/notes/modal-delete/modal-delete.component';
 import { EditNoteComponent } from './components/notes/edit-note/edit-note.component';
+import { LoadNotesButtonComponent } from './components/notes/load-notes-button/load-notes-button.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent, FooterComponent, CreateNoteComponent, ListNotesComponent, CardNoteComponent, ModalDeleteComponent, EditNoteComponent,
+    HeaderComponent, FooterComponent, CreateNoteComponent, ListNotesComponent, CardNoteComponent, ModalDeleteComponent, EditNoteComponent, LoadNotesButtonComponent,
   ],
   imports: [
     BrowserModule,

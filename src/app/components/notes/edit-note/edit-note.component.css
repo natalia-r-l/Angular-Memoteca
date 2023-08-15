@@ -137,4 +137,10 @@ input[type='radio']:checked+.custom-radio span {
   width: 200px;
 }
 
-
+.error-message {
+  font-size: 12px;
+  margin-left: 5px;
+  color: red;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}

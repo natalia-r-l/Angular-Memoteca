@@ -12,6 +12,12 @@
       name="note"
       formControlName="content"
       placeholder="Digite a anotação" >
+      <div class="error-message" *ngIf="form.get('content')?.errors?.['required'] && form.get('content')?.touched">
+        Este campo é obrigatório.
+      </div>
+      <div class="error-message" *ngIf="form.get('content')?.errors?.['pattern'] && form.get('content')?.touched">
+        Este campo não aceita números.
+      </div>
     <label for="author">Autoria</label>
     <input
       type="text"
@@ -20,6 +26,18 @@
       name="author"
       formControlName="author"
       placeholder="Digite o autor" >
+      <div class="error-message" *ngIf="form.get('author')?.errors?.['required'] && form.get('author')?.touched">
+        Este campo é obrigatório.
+      </div>
+      <div class="error-message" *ngIf="form.get('author')?.errors?.['minlength'] && form.get('author')?.touched">
+        O nome do autor precisa ter no mínimo 3 caracteres.
+      </div>
+      <div class="error-message" *ngIf="form.get('author')?.errors?.['upperCase'] && form.get('author')?.touched">
+        Este campo aceita apenas letras maiúsculas.
+      </div>
+      <div class="error-message" *ngIf="form.get('author')?.errors?.['pattern'] && form.get('author')?.touched">
+        Este campo não aceita números.
+      </div>
     <label form="model">Selecione o modelo do card: </label>
     <div class="container-radio">
       <div class="radio-model">
