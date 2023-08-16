@@ -11,9 +11,9 @@
         >
         <img src="/assets/imagens/lupa.png" alt="Lupa de busca">
     </div>
-    <h2 class="ff-inter">Meu mural</h2>
+    <h2 class="ff-inter"> {{ title }} </h2>
     <div class="buttons">
-      <button class="button"> Meu Mural </button>
+      <button class="button" (click)="loadNotes()"> Meu Mural </button>
       <button class="button" (click)="listNotesFavorites()"> Meus favoritos </button>
       <button routerLink="/createNote" class="button">Novo pensamento</button>
     </div>

@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Note } from '../note';
 import { NoteService } from '../note.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-notes',
@@ -14,10 +15,14 @@ export class ListNotesComponent implements OnInit {
   hasMoreNotes: boolean = true;
   filter: string = ''
   favorites: boolean = false
+  title: string = 'Meu Mural'
 
   @Input() favoriteNotesList: Note[] = []
 
-  constructor(private service: NoteService) { }
+  constructor(
+    private service: NoteService,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
     this.service.list(this.page, this.filter, this.favorites).subscribe((notesList) => {
@@ -44,6 +49,7 @@ export class ListNotesComponent implements OnInit {
   }
 
   listNotesFavorites(){
+    this.title = 'Meus Favoritos'
     this.favorites = true
     this.hasMoreNotes = true
     this.page = 1;
@@ -52,6 +58,14 @@ export class ListNotesComponent implements OnInit {
         this.notesList = listFavorites
         this.favoriteNotesList = listFavorites
       })
+  }
+
+  loadNotes(){
+    this.favorites = false;
+    this.page = 1;
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+    this.router.onSameUrlNavigation = 'reload';
+    this.router.navigate([this.router.url])
   }
 
 }
