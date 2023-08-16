@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class NoteService {
 
-  private readonly API = 'http://localhost:3000/note'
+  private readonly API = 'https://vercel.com/natalia-r-l/json-server-fake-api-1zu2'
   constructor(private http: HttpClient) { }
 
   list(page: number, filter: string, favorites: boolean): Observable<Note[]>{
