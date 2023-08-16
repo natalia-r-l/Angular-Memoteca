@@ -35,6 +35,8 @@ export class ModalDeleteComponent implements OnInit {
     if(this.note.id){
       this.service.delete(this.note.id).subscribe(() => {
         this.router.navigate(['/listNotes'])
+      }, () => {
+        this.router.navigate(['/listNotes'])
       })
     }
   }

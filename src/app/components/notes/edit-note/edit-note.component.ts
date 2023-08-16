@@ -43,6 +43,8 @@ export class EditNoteComponent implements OnInit {
     if(this.form.valid){
       this.service.update(this.form.value).subscribe(() => {
         this.router.navigate(['/listNotes'])
+      }, () => {
+        this.router.navigate(['/listNotes'])
       })
     }
 

@@ -41,6 +41,8 @@ export class CreateNoteComponent implements OnInit {
     if(this.form.valid){
       this.service.createNote(this.form.value).subscribe(() => {
         this.router.navigate(['/listNotes'])
+      }, () => {
+        this.router.navigate(['/listNotes'])
       })
     }
   }
