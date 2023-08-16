@@ -32,7 +32,8 @@ export class CreateNoteComponent implements OnInit {
         upperCaseValidator,
         Validators.pattern('[^0-9]+')
       ])],
-      model: ['model1']
+      model: ['model1'],
+      favorite: [false]
     })
   }
 

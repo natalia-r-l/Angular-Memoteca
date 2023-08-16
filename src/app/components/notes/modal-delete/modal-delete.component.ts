@@ -15,6 +15,7 @@ export class ModalDeleteComponent implements OnInit {
     content: '',
     author: '',
     model: '',
+    favorite: false
   }
 
   constructor(

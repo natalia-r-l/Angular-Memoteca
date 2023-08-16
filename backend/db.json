@@ -4,49 +4,29 @@
       "id": 1,
       "content": "Angular é muito legal. Não é mesmo? ",
       "author": "Nat",
-      "model": "model1"
+      "model": "model1",
+      "favorite": false
     },
     {
       "content": "teste",
       "author": "NAT",
       "model": "model1",
-      "id": 3
+      "id": 3,
+      "favorite": false
     },
     {
       "content": "teste",
       "author": "NAT",
       "model": "model1",
-      "id": 2
+      "id": 2,
+      "favorite": true
     },
     {
       "id": 4,
       "content": "teste",
       "author": "André",
-      "model": "model1"
-    },
-    {
-      "content": "teste",
-      "author": "NAT",
       "model": "model1",
-      "id": 5
-    },
-    {
-      "content": "teste",
-      "author": "NAT",
-      "model": "model1",
-      "id": 6
-    },
-    {
-      "content": "teste",
-      "author": "NAT",
-      "model": "model1",
-      "id": 7
-    },
-    {
-      "content": "teste",
-      "author": "NAT",
-      "model": "model1",
-      "id": 8
+      "favorite": false
     }
   ]
 }

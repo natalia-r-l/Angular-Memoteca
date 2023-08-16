@@ -33,7 +33,8 @@ export class EditNoteComponent implements OnInit {
           Validators.minLength(3),
           Validators.pattern('[^0-9]+')
         ])],
-        model: [note.model]
+        model: [note.model],
+        favorite: [note.favorite]
       })
     })
   }
