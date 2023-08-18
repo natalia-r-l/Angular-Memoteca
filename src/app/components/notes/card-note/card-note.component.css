@@ -8,6 +8,7 @@
   cursor: pointer;
   margin-left: 5px;
   margin-top: 15px;
+  background-color: transparent;
 }
 
 .note {
@@ -26,15 +27,18 @@
 }
 
 .model1 {
-  box-shadow: 8px 8px 0px #154580;
+  background-color: #caf0f8;
+  box-shadow: 8px 8px 0px #00b4d8;
 }
 
 .model2 {
-  box-shadow: 8px 8px 0px #6BD1FF;
+  background-color: #ffe5ec;
+  box-shadow: 8px 8px 0px #fb6f92;
 }
 
 .model3 {
-  box-shadow: 8px 8px 0px #84EEC1;
+  background-color: #fff2b2;
+  box-shadow: 8px 8px 0px #ffd819;
 }
 
 .note-large {

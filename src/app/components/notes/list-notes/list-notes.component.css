@@ -83,6 +83,18 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-right: 2px;
 }
 
+.btn-icon{
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.bi-search{
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 216px) {
   .search-notes {
     width: 250px;

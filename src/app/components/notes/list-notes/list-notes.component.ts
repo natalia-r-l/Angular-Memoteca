@@ -15,7 +15,7 @@ export class ListNotesComponent implements OnInit {
   hasMoreNotes: boolean = true;
   filter: string = ''
   favorites: boolean = false
-  title: string = 'Meu Mural'
+  title: string = 'Meu Mural '
 
   @Input() favoriteNotesList: Note[] = []
 

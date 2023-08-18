@@ -14,7 +14,6 @@ import { ModalDeleteComponent } from './components/notes/modal-delete/modal-dele
 import { EditNoteComponent } from './components/notes/edit-note/edit-note.component';
 import { LoadNotesButtonComponent } from './components/notes/load-notes-button/load-notes-button.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +24,7 @@ import { LoadNotesButtonComponent } from './components/notes/load-notes-button/l
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
