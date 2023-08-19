@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Note } from '../notes/note';
+import { Router } from '@angular/router';
+import { NoteService } from '../notes/note.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( ) { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
+
   }
 
 

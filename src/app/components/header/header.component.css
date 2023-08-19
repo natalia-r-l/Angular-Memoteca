@@ -1,41 +1,63 @@
 .header-section {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #154580;
   }
 
   .header-section .logo {
     width: 46%;
-    padding: 2rem 3rem;
+    padding: 2rem;
   }
-
 
   .header-section .logo img {
-    width: 30%;
-    max-width: 350px;
-
+    max-width: 150px;
   }
 
-  .header-section .imagem{
-    width: 40%;
+  .header-section p{
+    margin-top: 20px;
+    color: aliceblue;
+    font-weight: 500;
   }
 
-  .header-section p {
-    font-size: 1.5rem;
+  .header-section .add{
+    color: #154580;
+    max-width: 270px;
+    padding: 1rem;
+    transition: 0.5s ease;
+    background-color: white;
+    margin: 50px;
+    border: 2px solid #154580;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-section .add:hover{
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  .btn-icon{
+    margin-right: 10px;
+    height: 26px;
+    width: 26px;
+  }
+
+  .nav-link{
+    display: flex;
+    flex-direction: row;
+    align-content: end;
+    font-size: 1rem;
     margin-top: 30px;
     color: white;
     font-weight: 600;
+    margin-bottom: 30px;
   }
 
-  .illustration{
-    margin: 20px 50px 20px 0px;
+  .nav-link:hover{
+    text-decoration: underline;
   }
-
-  .ilustra{
-    max-width: 70%;
-  }
-
 
   @media (max-width: 576px) {
     .header-section .logo {

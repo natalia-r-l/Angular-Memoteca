@@ -1,6 +1,6 @@
 <section class="container create-notes ff-inter">
   <header class="header">
-      <h2>Adicione um <br> pensamento novo:</h2>
+      <h2>Adicione um <br> lembrete novo:</h2>
   </header>
   <form [formGroup]="form">
     <label for="note">Anotação</label>
@@ -48,6 +48,7 @@
       </label>
       Prévia:
       <div class="model model1 ff-roboto-mono">
+        <img src="/assets/imagens/model1.png" alt="Ílustração de lâmpada azul" >
         <p class="content"> {{ form.get('content')?.value }} </p>
         <p class="author"><b> {{ form.get('author')?.value }} </b></p>
       </div>
@@ -63,6 +64,7 @@
       </label>
       Prévia:
       <div class="model model2 ff-roboto-mono">
+        <img src="/assets/imagens/model2.png" alt="Ílustração de lâmpada rosa" >
         <p class="content"> {{ form.get('content')?.value }} </p>
         <p class="author"><b> {{ form.get('author')?.value }} </b></p>
       </div>
@@ -78,6 +80,7 @@
       </label>
       Prévia:
       <div class="model model3 ff-roboto-mono">
+        <img src="/assets/imagens/model3.png" alt="Ílustração de lâmpada amarelo" >
         <p class="content"> {{ form.get('content')?.value }} </p>
         <p class="author"><b> {{ form.get('author')?.value }} </b></p>
       </div>
