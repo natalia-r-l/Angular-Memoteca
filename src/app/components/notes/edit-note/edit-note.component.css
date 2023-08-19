@@ -60,10 +60,11 @@
 
 .model {
   background-color: #F8F9FE;
-  padding: 1rem;
+  padding: 1rem 7rem 2rem 1rem;
   max-width: 250px;
   margin: 1rem 0 2rem;
 }
+
 
 .model .content {
   margin: 1rem auto;
@@ -146,4 +147,15 @@ input[type='radio']:checked+.custom-radio span {
   color: red;
   margin-top: -25px;
   margin-bottom: 20px;
+}
+
+.button-white {
+  background-color: transparent;
+  color:#154580;
+}
+
+.button-white:hover{
+  background-color: lightgray;
+  color:#154580;
+  border: 2px solid #154580;
 }
