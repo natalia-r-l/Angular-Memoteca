@@ -15,7 +15,7 @@ export class ListNotesComponent implements OnInit {
   hasMoreNotes: boolean = true;
   filter: string = ''
   favorites: boolean = false
-  title: string = 'Meu Mural '
+  title: string = 'Exibindo todos os lembretes '
 
   @Input() favoriteNotesList: Note[] = []
 
@@ -49,7 +49,7 @@ export class ListNotesComponent implements OnInit {
   }
 
   listNotesFavorites(){
-    this.title = 'Meus Favoritos'
+    this.title = 'Exibindo meus favoritos'
     this.favorites = true
     this.hasMoreNotes = true
     this.page = 1;
@@ -65,7 +65,16 @@ export class ListNotesComponent implements OnInit {
     this.page = 1;
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     this.router.onSameUrlNavigation = 'reload';
-    this.router.navigate([this.router.url])
+    this.router.navigate([this.router.url]);
   }
+
+  /*
+  activeButton(){
+    if(this.favorites = false && this.page == 1){
+      return 'button-active'
+    } else {
+      return 'button'
+    }
+  }*/
 
 }

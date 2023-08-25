@@ -16,6 +16,10 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  color: black;
+  font-size: 20px;
+  margin: 20px 0px 25px 23px;
+  padding-top: 30px;
 }
 
 .d-flex{
@@ -37,13 +41,13 @@ h2 {
 }
 
 .search-notes {
-  background: #F8F9FE;
+  background: white;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 44px;
   left: 421px;
   top: 490px;
-  width: 510px;
+  width: 400px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -54,12 +58,11 @@ h2 {
   padding-right: 15px;
 }
 
+
 input::placeholder {
-  color: #C4C4C4;
-  font-family: 'Inter';
-  font-style: normal;
+  color: #a19494;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 29px;
 }
 
@@ -75,7 +78,7 @@ input[type="search"]::-webkit-search-cancel-button {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 29px;
   border: none;
   outline: 0;
@@ -88,22 +91,28 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 100px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 5px
 }
 
 .button {
+  margin: 0;
   margin-left: 10px;
   margin-right: 2px;
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: transparent;
-  color:#154580;
+  color:#F0F8FF;
+  border: none;
+  cursor: pointer;
 }
 
-.button:hover{
-  background-color: lightgray;
-  color:#154580;
-  border: 2px solid #154580;
+.button:focus{
+  color: red;
+}
+
+.default{
+  text-decoration: underline solid white 3px;
 }
 
 .btn-icon{
@@ -116,12 +125,13 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 26px;
   height: 26px;
   margin-right: 10px;
+
 }
 
-.navigation{
-  background-color: transparent;
-  color: #154580;
-  font-size: medium;
+.content{
+  background-color: #F0F8FF;
+  border-radius: 20px;
+  min-height: 350px;
 }
 
 @media screen and (min-width: 216px) {
@@ -138,6 +148,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @media screen and (min-width: 576px) {
   .search-notes {
-    width: 510px;
+    width: 400px;
   }
 }

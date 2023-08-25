@@ -1,6 +1,15 @@
 .load-more {
   margin-top: 10px;
   margin-bottom: 30px;
+  background-image: linear-gradient(to right, #cae9f5 , #86c5d8);
+  color: black;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+}
+
+.load-more:hover{
+  background-image: linear-gradient(to right, #b0dcee , #84c3d6);
 }
 
 .center {
@@ -12,4 +21,5 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 50px;
+  color: black;
 }

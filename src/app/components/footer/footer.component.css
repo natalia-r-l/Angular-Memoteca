@@ -1,24 +1,22 @@
 footer {
-  /*background-image: url(/assets/imagens/fundo-rodape.png);*/
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "TextCopyright LogoFooter .";
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #154580;
+  background-color: #212325;
+  padding-top: 100px;
 }
 
 .TextCopyright {
-  justify-self: center;
-  grid-area: TextCopyright;
+  display: flex;
+  justify-self: start;
+  padding-bottom: 10px;
 }
 
 .LogoFooter {
-  justify-self: center;
-  grid-area: LogoFooter;
+  display: flex;
+  justify-self: end;
+  padding-bottom: 20px;
 }
 
 footer small {

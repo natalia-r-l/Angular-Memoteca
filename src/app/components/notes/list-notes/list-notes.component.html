@@ -4,7 +4,7 @@
       <input
         type="search"
         class="filter"
-        placeholder="Qual ideia você procura?"
+        placeholder="Qual lembrete você procura?"
         autofocus
         [(ngModel)]="filter"
         (keyup)="searchNotes()"
@@ -20,12 +20,11 @@
         />
       </svg>
     </div>
-    <h2 class="ff-inter title">{{ title }}</h2>
   </header>
   <div>
-    <div class="buttons">
-      <button class="button" (click)="loadNotes()">
-        <svg
+    <div class="buttons ">
+      <button class="button active" (click)="loadNotes()"  >
+        <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           class="btn-icon bi bi-lightbulb-fill"
@@ -34,11 +33,11 @@
           <path
             d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"
           />
-        </svg>
+        </svg> -->
         Todos os lembretes
       </button>
-      <button class="button" (click)="listNotesFavorites()">
-        <svg
+      <button class="button inactive" (click)="listNotesFavorites()" >
+        <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
@@ -50,23 +49,26 @@
             fill-rule="evenodd"
             d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
           />
-        </svg>
+        </svg> -->
         Meus favoritos
       </button>
     </div>
   </div>
-
-  <div class="panel" *ngIf="notesList.length > 0; else withoutNotes">
-    <div *ngFor="let note of notesList">
-      <app-card-note
-        [note]="note"
-        [favoriteNotesList]="favoriteNotesList"
-      ></app-card-note>
+  <div class="content">
+    <p class="ff-inter title">{{ title }}</p>
+    <div class="panel" *ngIf="notesList.length > 0; else withoutNotes">
+      <div *ngFor="let note of notesList">
+        <app-card-note
+          [note]="note"
+          [favoriteNotesList]="favoriteNotesList"
+        ></app-card-note>
+      </div>
     </div>
+    <app-load-notes-button [hasMoreNotes]="hasMoreNotes" (click)="loadMoreNotes()">
+    </app-load-notes-button>
   </div>
 </section>
-<app-load-notes-button [hasMoreNotes]="hasMoreNotes" (click)="loadMoreNotes()">
-</app-load-notes-button>
+
 <ng-template #withoutNotes>
   <div class="ff-inter without-notes">
     <p>Ainda não há nada cadastrado!</p>

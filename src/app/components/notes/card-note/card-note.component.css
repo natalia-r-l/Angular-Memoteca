@@ -28,17 +28,17 @@
 
 .model1 {
   background-color: #afe1eb;
-  box-shadow: 8px 8px 0px #00b4d8;
+  border-radius: 20px;
 }
 
 .model2 {
   background-color: #ffe5ec;
-  box-shadow: 8px 8px 0px #fb6f92;
+  border-radius: 20px;
 }
 
 .model3 {
   background-color: #fff2b2;
-  box-shadow: 8px 8px 0px #ffd819;
+  border-radius: 20px;
 }
 
 .note-large {

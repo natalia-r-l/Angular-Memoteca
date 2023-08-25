@@ -1,7 +1,7 @@
 .header-section {
     display: flex;
     justify-content: space-around;
-    background-color: #154580;
+    background-color:  #212325;
   }
 
   .header-section .logo {
@@ -10,23 +10,25 @@
   }
 
   .header-section .logo img {
-    max-width: 150px;
+    max-width: 200px;
+    margin-top: 10px;
+    cursor: pointer;
   }
 
   .header-section p{
     margin-top: 20px;
-    color: aliceblue;
+    color: #f0f8ff;
     font-weight: 500;
   }
 
   .header-section .add{
-    color: #154580;
+    color: black;
     max-width: 270px;
     padding: 1rem;
     transition: 0.5s ease;
-    background-color: white;
+    background-image: linear-gradient(to right, #cae9f5 , #86c5d8);
     margin: 50px;
-    border: 2px solid #154580;
+    border: none;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -34,7 +36,7 @@
   }
 
   .header-section .add:hover{
-    background-color: lightgray;
+    background-image: linear-gradient(to right, #b0dcee , #84c3d6);
     cursor: pointer;
   }
 
