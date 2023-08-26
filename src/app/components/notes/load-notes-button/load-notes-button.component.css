@@ -1,9 +1,7 @@
 .load-more {
   margin-top: 10px;
   margin-bottom: 30px;
-  background-image: linear-gradient(to right, #cae9f5 , #86c5d8);
   color: black;
-  cursor: pointer;
   border: none;
   font-weight: 500;
 }

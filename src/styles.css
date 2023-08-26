@@ -29,16 +29,13 @@ h2 {
 }
 
 .container {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
 
 .button {
-  background: #154580;
+  background-image: linear-gradient(to right, #9dc4d3 , #2492b3);
   color: #ffffff;
   max-width: 270px;
   padding: 1rem;
@@ -46,7 +43,8 @@ h2 {
   border: 2px solid #154580;
   border-radius: 10px;
   transition: 0.5s ease;
-  font-size: 20px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -66,6 +64,34 @@ h2 {
   transition: 0.5s ease;
 }
 
+.model{
+  padding: 2rem;
+
+}
+
+.model1 {
+  background-color: #afe1eb;
+  border-radius: 20px;
+}
+
+.model2 {
+  background-color: #ffe5ec;
+  border-radius: 20px;
+}
+
+.model3 {
+  background-color: #fff2b2;
+  border-radius: 20px;
+}
+
+.model .content {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.model .author {
+  word-wrap: break-word;
+}
 
 @media (min-width: 576px) {
   .container {

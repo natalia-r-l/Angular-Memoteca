@@ -5,40 +5,10 @@
 
 .actions-button {
   border: none;
-  cursor: pointer;
   margin-left: 5px;
   margin-top: 15px;
   background-color: transparent;
-}
-
-.note {
-  background-color: #F8F9FE;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.note .content {
-  margin: 1rem auto;
-  word-wrap: break-word;
-}
-
-.note .author {
-  word-wrap: break-word;
-}
-
-.model1 {
-  background-color: #afe1eb;
-  border-radius: 20px;
-}
-
-.model2 {
-  background-color: #ffe5ec;
-  border-radius: 20px;
-}
-
-.model3 {
-  background-color: #fff2b2;
-  border-radius: 20px;
+  cursor: pointer;
 }
 
 .note-large {

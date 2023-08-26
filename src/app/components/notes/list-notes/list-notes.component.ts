@@ -15,7 +15,9 @@ export class ListNotesComponent implements OnInit {
   hasMoreNotes: boolean = true;
   filter: string = ''
   favorites: boolean = false
-  title: string = 'Exibindo todos os lembretes '
+  title: string = 'Exibindo todos os lembretes'
+  purple: boolean = false;
+
 
   @Input() favoriteNotesList: Note[] = []
 
@@ -53,6 +55,7 @@ export class ListNotesComponent implements OnInit {
     this.favorites = true
     this.hasMoreNotes = true
     this.page = 1;
+    this.activeButton()
     this.service.list(this.page, this.filter, this.favorites)
       .subscribe(listFavorites => {
         this.notesList = listFavorites
@@ -61,20 +64,24 @@ export class ListNotesComponent implements OnInit {
   }
 
   loadNotes(){
+    this.title = 'Exibindo todos os lembretes'
     this.favorites = false;
+    this.purple = true;
     this.page = 1;
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    this.router.onSameUrlNavigation = 'reload';
-    this.router.navigate([this.router.url]);
+    this.service.list(this.page, this.filter, this.favorites)
+      .subscribe(listFavorites => {
+        this.notesList = listFavorites
+        this.favoriteNotesList = listFavorites
+    })
   }
 
-  /*
-  activeButton(){
-    if(this.favorites = false && this.page == 1){
+
+  activeButton(): string{
+    if(this.purple = true){
       return 'button-active'
     } else {
       return 'button'
     }
-  }*/
+  }
 
 }

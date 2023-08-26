@@ -54,6 +54,18 @@
         <img src="/assets/imagens/model1.png" alt="Ílustração de lâmpada azul" >
         <p class="content"> {{ form.get('content')?.value }} </p>
         <p class="author"><b> {{ form.get('author')?.value }} </b></p>
+        <div class="actions">
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-favorito-ativo.png"
+            alt="Ícone de favorito">
+          </button>
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-editar.png"  >
+          </button>
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
+          </button>
+       </div>
       </div>
       </div>
       <div class="radio-model">
@@ -70,6 +82,18 @@
         <img src="/assets/imagens/model2.png" alt="Ílustração de lâmpada rosa" >
         <p class="content"> {{ form.get('content')?.value }} </p>
         <p class="author"><b> {{ form.get('author')?.value }} </b></p>
+        <div class="actions">
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-favorito-ativo.png"
+            alt="Ícone de favorito">
+          </button>
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-editar.png"  >
+          </button>
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
+          </button>
+       </div>
       </div>
       </div>
       <div class="radio-model">
@@ -85,15 +109,28 @@
         <img src="/assets/imagens/model3.png" alt="Ílustração de lâmpada amarela" >
         <p class="content"> {{ form.get('content')?.value }} </p>
         <p class="author"><b> {{ form.get('author')?.value }} </b></p>
+        <div class="actions">
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-favorito-ativo.png"
+            alt="Ícone de favorito">
+          </button>
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-editar.png"  >
+          </button>
+          <button class="actions-button">
+            <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
+          </button>
+       </div>
       </div>
       </div>
     </div>
-    <div class="actions">
+    <div class="confirm">
       <button (click)="cancelUpdate()" class="button button-white"> Cancelar</button>
       <button
         (click)="update()"
         [disabled]="!form.valid"
         [ngClass]="enableButtonUpdate()"
+        class="button"
         >Salvar Alterações</button>
     </div>
   </form>
