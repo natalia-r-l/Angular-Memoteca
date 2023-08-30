@@ -1,8 +1,20 @@
-.actions {
+.save {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end
+}
+
+.actions-button {
+  border: none;
+  margin-left: 5px;
+  margin-top: 15px;
+  background-color: transparent;
 }
 
 .button {
@@ -15,46 +27,6 @@
   padding: 2rem 0;
 }
 
-.create-notes form {
-  background: #C4EDFF;
-
-  border: none;
-  border-radius: 20px;
-
-  display: flex;
-  flex-direction: column;
-
-  padding: 2rem;
-}
-
-.create-notes form label {
-  color: #154580;
-  font-weight: bold;
-  margin: 0 0 1rem;
-}
-
-.create-notes form .input {
-  border: none;
-  height: 40px;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  margin: 0.5rem 0 2rem;
-}
-
-
-.create-notes form .textarea {
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  margin: 0.5rem 0 2rem;
-}
-
-.container-radio {
-  display: flex;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-}
-
 .error-message {
   font-size: 12px;
   margin-left: 5px;
@@ -63,75 +35,9 @@
   margin-bottom: 20px;
 }
 
-.model {
-  padding: 1rem 7rem 2rem 1rem;
-  max-width: 250px;
-  margin: 1rem 0 2rem;
-}
-
-.model .content {
-  margin: 1rem auto;
-  word-wrap: break-word;
-}
-
-.radio {
-  margin: 0;
-}
-
-input[type='radio'] {
-  display: none;
-}
-
-.radio-model label {
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-}
-
-.custom-radio {
-  border: 1px solid #154580;
-  width: 30px;
-  height: 30px;
-  display: grid;
-  place-content: center;
-  border-radius: 50%;
-}
-
-.custom-radio,
-span {
-  transition: 0.5s ease;
-  color: #154580;
-}
-
-.custom-radio span {
-  content: '';
-  width: 18px;
-  height: 18px;
-  background: transparent;
-  border-radius: 50%;
-}
-
-input[type='radio']:checked+.custom-radio {
-  border-color: #154580;
-}
-
-input[type='radio']:checked+.custom-radio span {
-  background: #154580;
-}
-
 .button-disabled {
   margin: 5px;
   margin-top: 70px;
   width: 200px;
 }
 
-.button-white {
-  background-color: transparent;
-  color:#154580;
-}
-
-.button-white:hover{
-  background-color: lightgray;
-  color:#154580;
-  border: 2px solid #154580;
-}

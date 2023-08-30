@@ -22,13 +22,7 @@
   }
 
   .header-section .add{
-    color: black;
-    max-width: 270px;
-    padding: 1rem;
-    transition: 0.5s ease;
     margin: 50px;
-    border: none;
-    border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;

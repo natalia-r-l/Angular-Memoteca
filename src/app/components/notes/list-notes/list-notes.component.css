@@ -6,12 +6,6 @@
   margin: 1rem 0 2rem;
 }
 
-h2 {
-  display: flex;
-  align-items: start;
-}
-
-
 .title{
   display: flex;
   flex-direction: row;
@@ -86,17 +80,16 @@ input[type="search"]::-webkit-search-cancel-button {
   border-radius: 10px;
 }
 
-.buttons{
-  margin-bottom: 100px;
+.navigation{
+  margin-bottom: 35px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 5px
 }
 
-.button {
+.button-navigation {
   margin: 0;
   margin-left: 10px;
-  margin-right: 2px;
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -107,12 +100,25 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .clicked{
-  color:white;
-  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+  color: #abd8e9;
+}
+
+.clicked:hover{
+  background-color: transparent;
 }
 
 .notClicked{
-  color:white;
+  color:#7A7F87;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.button-navigation:hover{
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .btn-icon{

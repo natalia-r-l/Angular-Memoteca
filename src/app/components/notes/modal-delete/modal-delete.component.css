@@ -1,6 +1,6 @@
 .modal {
   background: #fff;
-  box-shadow: 7px 8px 0px 0px #154580;
+  border-radius: 20px;
   min-width: 360px;
   min-height: 150px;
   position: fixed;
@@ -9,7 +9,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 11;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   padding-top: 50px;
 }
@@ -37,19 +37,6 @@
   margin: 5px;
   margin-top: 70px;
   width: 200px;
-}
-
-.cancel-button {
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.delete-button {
-  border: none;
-  margin-left: 5px;
-  margin-top: 10px;
 }
 
 .delete-notes {

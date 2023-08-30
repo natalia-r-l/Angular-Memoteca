@@ -21,16 +21,24 @@
       </svg>
     </div>
   </header>
-  <div>
-    <div class="buttons ">
-      <button class="button " (click)="loadNotes()" [ngClass]="{'clicked': !favorites, 'notClicked': favorites }" >
-        Todos os lembretes
-      </button>
-      <button class="button" (click)="listNotesFavorites()" [ngClass]="{'clicked': favorites, 'notClicked': !favorites }" >
-        Meus favoritos
-      </button>
-    </div>
+
+  <div class="navigation">
+    <button
+      class="button-navigation"
+      (click)="loadNotes()"
+      [ngClass]="{ clicked: !favorites, notClicked: favorites }"
+    >
+      Todos os lembretes
+    </button>
+    <button
+      class="button-navigation"
+      (click)="listNotesFavorites()"
+      [ngClass]="{ clicked: favorites, notClicked: !favorites }"
+    >
+      Meus favoritos
+    </button>
   </div>
+
   <div class="content">
     <p class="ff-inter title">{{ title }}</p>
     <div class="panel" *ngIf="notesList.length > 0; else withoutNotes">
@@ -41,7 +49,10 @@
         ></app-card-note>
       </div>
     </div>
-    <app-load-notes-button [hasMoreNotes]="hasMoreNotes" (click)="loadMoreNotes()">
+    <app-load-notes-button
+      [hasMoreNotes]="hasMoreNotes"
+      (click)="loadMoreNotes()"
+    >
     </app-load-notes-button>
   </div>
 </section>

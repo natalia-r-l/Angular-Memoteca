@@ -1,6 +1,6 @@
 <section class="container create-notes ff-inter">
   <header class="header">
-      <h2>Adicione um <br> lembrete novo:</h2>
+    <h2>Adicione um novo lembrete</h2>
   </header>
   <form [formGroup]="form">
     <label for="note">Anotação</label>
@@ -9,90 +9,183 @@
       class="input"
       id="content"
       formControlName="content"
-      placeholder="Digite a anotação" >
-      <div class="error-message" *ngIf="form.get('content')?.errors?.['required'] && form.get('content')?.touched">
-        Este campo é obrigatório.
-      </div>
-      <div class="error-message" *ngIf="form.get('content')?.errors?.['pattern'] && form.get('content')?.touched">
-        Este campo não aceita números.
-      </div>
+      placeholder="Digite a anotação"
+    />
+    <div
+      class="error-message"
+      *ngIf="form.get('content')?.errors?.['required'] && form.get('content')?.touched"
+    >
+      Este campo é obrigatório.
+    </div>
+    <div
+      class="error-message"
+      *ngIf="form.get('content')?.errors?.['pattern'] && form.get('content')?.touched"
+    >
+      Este campo não aceita números.
+    </div>
     <label for="author">Autoria</label>
     <input
       type="text"
       class="input"
       id="author"
       formControlName="author"
-      placeholder="Digite o autor" >
-      <div class="error-message" *ngIf="form.get('author')?.errors?.['required'] && form.get('author')?.touched">
-        Este campo é obrigatório.
-      </div>
-      <div class="error-message" *ngIf="form.get('author')?.errors?.['minlength'] && form.get('author')?.touched">
-        O nome do autor precisa ter no mínimo 3 caracteres.
-      </div>
-      <div class="error-message" *ngIf="form.get('author')?.errors?.['upperCase'] && form.get('author')?.touched">
-        Este campo aceita apenas letras maiúsculas.
-      </div>
-      <div class="error-message" *ngIf="form.get('author')?.errors?.['pattern'] && form.get('author')?.touched">
-        Este campo não aceita números.
-      </div>
+      placeholder="Digite o autor"
+    />
+    <div
+      class="error-message"
+      *ngIf="form.get('author')?.errors?.['required'] && form.get('author')?.touched"
+    >
+      Este campo é obrigatório.
+    </div>
+    <div
+      class="error-message"
+      *ngIf="form.get('author')?.errors?.['minlength'] && form.get('author')?.touched"
+    >
+      O nome do autor precisa ter no mínimo 3 caracteres.
+    </div>
+    <div
+      class="error-message"
+      *ngIf="form.get('author')?.errors?.['upperCase'] && form.get('author')?.touched"
+    >
+      Este campo aceita apenas letras maiúsculas.
+    </div>
+    <div
+      class="error-message"
+      *ngIf="form.get('author')?.errors?.['pattern'] && form.get('author')?.touched"
+    >
+      Este campo não aceita números.
+    </div>
     <label form="model">Selecione o modelo do card: </label>
     <div class="container-radio">
       <div class="radio-model">
         <label for="model1">
-          <input type="radio" id="model1" value="model1" formControlName="model" >
+          <input
+            type="radio"
+            id="model1"
+            value="model1"
+            formControlName="model"
+          />
 
-        <div class="custom-radio">
-          <span></span>
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 1</span>
+        </label>
+        Prévia:
+        <div class="model model1 ff-roboto-mono">
+          <p class="content">{{ form.get("content")?.value }}</p>
+          <p class="author">
+            <b> {{ form.get("author")?.value }} </b>
+          </p>
+          <div class="actions">
+            <button class="actions-button">
+              <img
+                src="/assets/imagens/icone-favorito-ativo.png"
+                alt="Ícone de favorito"
+              />
+            </button>
+            <button class="actions-button">
+              <img src="/assets/imagens/icone-editar.png" />
+            </button>
+            <button class="actions-button">
+              <img
+                src="/assets/imagens/icone-excluir.png"
+                alt="Ícone de excluir"
+              />
+            </button>
+          </div>
         </div>
-        <span>Modelo 1</span>
-      </label>
-      Prévia:
-      <div class="model model1 ff-roboto-mono">
-        <img src="/assets/imagens/model1.png" alt="Ílustração de lâmpada azul" >
-        <p class="content"> {{ form.get('content')?.value }} </p>
-        <p class="author"><b> {{ form.get('author')?.value }} </b></p>
-      </div>
       </div>
       <div class="radio-model">
         <label for="model2">
-          <input type="radio" id="model2" value="model2" formControlName="model" >
+          <input
+            type="radio"
+            id="model2"
+            value="model2"
+            formControlName="model"
+          />
 
-        <div class="custom-radio">
-          <span></span>
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 2</span>
+        </label>
+        Prévia:
+        <div class="model model2 ff-roboto-mono">
+         <p class="content">{{ form.get("content")?.value }}</p>
+          <p class="author">
+            <b> {{ form.get("author")?.value }} </b>
+          </p>
+          <div class="actions">
+            <button class="actions-button">
+              <img
+                src="/assets/imagens/icone-favorito-ativo.png"
+                alt="Ícone de favorito"
+              />
+            </button>
+            <button class="actions-button">
+              <img src="/assets/imagens/icone-editar.png" />
+            </button>
+            <button class="actions-button">
+              <img
+                src="/assets/imagens/icone-excluir.png"
+                alt="Ícone de excluir"
+              />
+            </button>
+          </div>
         </div>
-        <span>Modelo 2</span>
-      </label>
-      Prévia:
-      <div class="model model2 ff-roboto-mono">
-        <img src="/assets/imagens/model2.png" alt="Ílustração de lâmpada rosa" >
-        <p class="content"> {{ form.get('content')?.value }} </p>
-        <p class="author"><b> {{ form.get('author')?.value }} </b></p>
-      </div>
       </div>
       <div class="radio-model">
         <label for="model3">
-          <input type="radio" id="model3" value="model3" formControlName="model"  >
+          <input
+            type="radio"
+            id="model3"
+            value="model3"
+            formControlName="model"
+          />
 
-        <div class="custom-radio">
-          <span></span>
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 3</span>
+        </label>
+        Prévia:
+        <div class="model model3 ff-roboto-mono">
+          <p class="content">{{ form.get("content")?.value }}</p>
+          <p class="author">
+            <b> {{ form.get("author")?.value }} </b>
+          </p>
+          <div class="actions">
+            <button class="actions-button">
+              <img
+                src="/assets/imagens/icone-favorito-ativo.png"
+                alt="Ícone de favorito"
+              />
+            </button>
+            <button class="actions-button">
+              <img src="/assets/imagens/icone-editar.png" />
+            </button>
+            <button class="actions-button">
+              <img
+                src="/assets/imagens/icone-excluir.png"
+                alt="Ícone de excluir"
+              />
+            </button>
+          </div>
         </div>
-        <span>Modelo 3</span>
-      </label>
-      Prévia:
-      <div class="model model3 ff-roboto-mono">
-        <img src="/assets/imagens/model3.png" alt="Ílustração de lâmpada amarelo" >
-        <p class="content"> {{ form.get('content')?.value }} </p>
-        <p class="author"><b> {{ form.get('author')?.value }} </b></p>
-      </div>
       </div>
     </div>
-    <div class="actions">
-      <button (click)="cancelNote()" class="button button-white">Cancelar</button>
+    <div class="save">
+      <button (click)="cancelNote()" class="button button-secondary">
+        Cancelar
+      </button>
       <button
         (click)="createNote()"
         [disabled]="!form.valid"
         [ngClass]="enableButton()"
-        >Salvar</button>
+      >
+        Salvar
+      </button>
     </div>
   </form>
 </section>
