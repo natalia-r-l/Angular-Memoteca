@@ -28,7 +28,6 @@ h2 {
 }
 
 .button {
-  /*background-color: #9dc4d3;*/
   background-color: #abd8e9;
   color: black;
   max-width: 270px;
@@ -129,7 +128,14 @@ form .input {
 }
 
 
-.form .textarea {
+form .input:focus {
+  outline: none;
+  border:1px solid #abd8e9;
+}
+
+
+
+form .textarea {
   border: none;
   padding: 1rem 2rem;
   border-radius: 20px;
