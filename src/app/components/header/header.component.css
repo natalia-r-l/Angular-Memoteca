@@ -33,6 +33,20 @@
 
   }
 
+  .header-section .button {
+    background-color: #abd8e9;
+    color: black;
+    max-width: 270px;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+  }
+
+
   .btn-icon{
     margin-right: 10px;
     height: 26px;
@@ -54,18 +68,6 @@
     text-decoration: underline;
   }
 
-  .button {
-    background-color: #abd8e9;
-    color: black;
-    max-width: 270px;
-    padding: 1rem;
-    margin: 0 auto;
-    border-radius: 10px;
-    transition: 0.5s ease;
-    font-size: 15px;
-    cursor: pointer;
-    border: none;
-  }
 
   @media (max-width: 576px) {
     .header-section .logo {
