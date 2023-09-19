@@ -1,3 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+.ff-inter { font-family: 'Inter', sans-serif; }
+
+.ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
+
+.container {
+  padding: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .confirm {
   display: flex;
   justify-content: center;
@@ -98,3 +118,111 @@
   background-image: linear-gradient(to right, #ced4da , #bdc5cc);
 }
 
+form label {
+  color: black;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+form {
+  background-color: #edf1f5;
+  border-radius: 20px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+form .input {
+  border: none;
+  height: 40px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+form .input:focus {
+  outline: none;
+  border:1px solid #abd8e9;
+}
+
+form .textarea {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+.container-radio {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.radio {
+  margin: 0;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-model label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.custom-radio {
+  border: 1px solid #62a4bd;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+  color: black;
+}
+
+.custom-radio span {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked+.custom-radio {
+  border-color: #62a4bd;
+}
+
+input[type='radio']:checked+.custom-radio span {
+  background: #62a4bd;
+}
+
+@media (min-width: 576px) {
+  .container {
+      width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1140px;
+  }
+}
