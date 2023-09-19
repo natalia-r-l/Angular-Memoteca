@@ -24,10 +24,6 @@ h2 {
   margin: 50px 0px 0px 0px;
 }
 
-.button {
-  margin: 5px;
-}
-
 .edit-notes {
   padding: 2rem 0;
 }
@@ -98,6 +94,7 @@ h2 {
   font-size: 15px;
   cursor: pointer;
   border: none;
+  margin: 5px;
 }
 
 .button:hover {
@@ -109,6 +106,7 @@ h2 {
   margin: 5px;
   margin-top: 70px;
   width: 200px;
+  font-size: 15px;
 }
 
 .button-secondary{
