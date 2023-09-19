@@ -33,7 +33,7 @@
 
   }
 
-  .header-section .button {
+  .button {
     background-color: #abd8e9;
     color: black;
     max-width: 270px;
@@ -46,6 +46,9 @@
     border: none;
   }
 
+  .button:hover {
+    background-image: linear-gradient(to right, #b0dcee , #84c3d6);
+  }
 
   .btn-icon{
     margin-right: 10px;

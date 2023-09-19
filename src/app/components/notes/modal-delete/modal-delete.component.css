@@ -33,14 +33,40 @@
   margin-top: 30px;
 }
 
+/*
 .button {
   margin: 5px;
   margin-top: 70px;
   width: 200px;
+}*/
+
+.button {
+  background-color: #abd8e9;
+  color: black;
+  max-width: 270px;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #b0dcee , #84c3d6);
 }
 
 .delete-notes {
   padding: 10rem 0;
+}
+
+.button-danger{
+  background: #ef233c;
+}
+
+.button-danger:hover{
+  background-image: linear-gradient(to right, #ef233c , #d90429);
 }
 
 @media screen and (max-width: 548px) {

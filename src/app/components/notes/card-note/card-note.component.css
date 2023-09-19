@@ -33,3 +33,34 @@
     width: 100%;
   }
 }
+
+.model{
+  padding: 2rem;
+  min-width: 200px;
+  margin-top: 10px;
+}
+
+.model1 {
+  background-image: linear-gradient(to right, #deaaff, #bf87d4);
+  border-radius: 20px;
+}
+
+.model2 {
+  background-image: linear-gradient(to right, #ffcbf2, #ff87ab);
+  border-radius: 20px;
+}
+
+.model3 {
+  background-image: linear-gradient(to right, #fff2b2, #ffe97f);
+  background-color: #ffe97f;
+  border-radius: 20px;
+}
+
+.model .content {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.model .author {
+  word-wrap: break-word;
+}

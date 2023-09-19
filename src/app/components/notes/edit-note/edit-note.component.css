@@ -42,5 +42,59 @@
   margin-bottom: 20px;
 }
 
+.model{
+  padding: 2rem;
+  min-width: 200px;
+  margin-top: 10px;
+}
 
+.model1 {
+  background-image: linear-gradient(to right, #deaaff, #bf87d4);
+  border-radius: 20px;
+}
+
+.model2 {
+  background-image: linear-gradient(to right, #ffcbf2, #ff87ab);
+  border-radius: 20px;
+}
+
+.model3 {
+  background-image: linear-gradient(to right, #fff2b2, #ffe97f);
+  background-color: #ffe97f;
+  border-radius: 20px;
+}
+
+.model .content {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.model .author {
+  word-wrap: break-word;
+}
+
+.button {
+  background-color: #abd8e9;
+  color: black;
+  max-width: 270px;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #b0dcee , #84c3d6);
+}
+
+.button-secondary{
+  background: #ced4da;
+}
+
+.button-secondary:hover{
+  background-image: linear-gradient(to right, #ced4da , #bdc5cc);
+}
 

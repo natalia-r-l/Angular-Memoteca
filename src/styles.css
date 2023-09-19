@@ -27,6 +27,7 @@ h2 {
   margin-left: auto;
 }
 
+/*
 .button {
   background-color: #abd8e9;
   color: black;
@@ -42,8 +43,9 @@ h2 {
 
 .button:hover {
   background-image: linear-gradient(to right, #b0dcee , #84c3d6);
-}
+}*/
 
+/*
 .button-disabled{
   background: #7A7F87;
   color: #FFFFFF;
@@ -54,23 +56,27 @@ h2 {
   border: 2px solid #C4C4C4;
   border-radius: 10px;
   transition: 0.5s ease;
-}
+}*/
 
+/*
 .button-danger{
   background: #ef233c;
 }
 
 .button-danger:hover{
   background-image: linear-gradient(to right, #ef233c , #d90429);
-}
+}*/
 
+/*
 .button-secondary{
   background: #ced4da;
 }
 
 .button-secondary:hover{
   background-image: linear-gradient(to right, #ced4da , #bdc5cc);
-}
+}*/
+
+/*
 
 .model{
   padding: 2rem;
@@ -101,7 +107,7 @@ h2 {
 
 .model .author {
   word-wrap: break-word;
-}
+}*/
 
 form label {
   color: black;
