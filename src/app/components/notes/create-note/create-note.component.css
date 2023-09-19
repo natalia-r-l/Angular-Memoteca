@@ -20,7 +20,7 @@ h2 {
 .save {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 50px 0px 0px 0px;
   margin: 40px;
 }
 
@@ -36,12 +36,6 @@ h2 {
   background-color: transparent;
 }
 
-.button {
-  margin: 5px;
-  margin-top: 70px;
-  width: 200px;
-}
-
 .create-notes {
   padding: 2rem 0;
 }
@@ -52,12 +46,6 @@ h2 {
   color: red;
   margin-top: -25px;
   margin-bottom: 20px;
-}
-
-.button-disabled {
-  margin: 5px;
-  margin-top: 70px;
-  width: 200px;
 }
 
 .model{
@@ -96,7 +84,6 @@ h2 {
   color: black;
   max-width: 270px;
   padding: 1rem;
-  margin: 0 auto;
   border-radius: 10px;
   transition: 0.5s ease;
   font-size: 15px;
@@ -112,12 +99,11 @@ h2 {
   background: #7A7F87;
   color: #FFFFFF;
   max-width: 270px;
-  width: 250px;
   padding: 1rem;
-  margin: 0 auto;
   border: 2px solid #C4C4C4;
   border-radius: 10px;
   transition: 0.5s ease;
+
 }
 
 form label {

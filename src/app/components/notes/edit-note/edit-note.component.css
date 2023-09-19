@@ -48,11 +48,6 @@ h2 {
   background-color: transparent;
 }
 
-.button-disabled {
-  margin: 5px;
-  margin-top: 70px;
-  width: 200px;
-}
 
 .error-message {
   font-size: 12px;
@@ -98,7 +93,6 @@ h2 {
   color: black;
   max-width: 270px;
   padding: 1rem;
-  margin: 0 auto;
   border-radius: 10px;
   transition: 0.5s ease;
   font-size: 15px;
@@ -108,6 +102,13 @@ h2 {
 
 .button:hover {
   background-image: linear-gradient(to right, #b0dcee , #84c3d6);
+}
+
+
+.button-disabled {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
 }
 
 .button-secondary{
