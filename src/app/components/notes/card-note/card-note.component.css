@@ -30,11 +30,6 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 426px) {
-  .note-small {
-    width: 100%;
-  }
-}
 
 .model{
   padding: 2rem;
