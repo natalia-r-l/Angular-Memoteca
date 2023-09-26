@@ -56,7 +56,10 @@
   align-items: center;
   text-align: center;
   align-self: center;
+  margin-bottom: 30px;
 }
+
+
 
 .search-notes img {
   padding-right: 15px;
