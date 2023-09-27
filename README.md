@@ -14,14 +14,14 @@ Este projeto foi desenvolvido com base nos seguintes cursos da Alura, com a inst
 
 Projeto original: 
 
-<div style="max-width:200px">
+
 ![image](https://github.com/natalia-r-l/Angular-Memoteca/assets/61936956/b31ea399-bc0e-45fa-bacc-39a4894434a8)
-</div>
+
 
 Projeto com minhas modificações: 
-<div style="max-width:200px">
+
   ![image](https://github.com/natalia-r-l/Angular-Memoteca/assets/61936956/27707c89-914d-4fd3-b921-890d8084e691)
-</div>
+
 
 ### Importante: Há duplicação de estilos CSS pois quando o estilo foi definido globalmente, ocorreram bugs de interface no Vercel. 
 
