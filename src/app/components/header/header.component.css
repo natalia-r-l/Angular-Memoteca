@@ -1,98 +1,43 @@
 
 .header-section {
     display: flex;
-    justify-content: space-around;
-    background-color:  #212325;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 70px;
   }
 
-  .header-section .logo {
-    width: 46%;
-    padding: 2rem;
-  }
-
-  .header-section .logo img {
-    max-width: 200px;
-    margin-top: 10px;
+.header-section .logo img {
+    max-width: 180px;
     cursor: pointer;
+    margin-left: 20px;
   }
 
-  .header-section p{
-    margin-top: 20px;
-    color: #f0f8ff;
-    font-weight: 500;
-  }
-
-  .header-section .add{
-    margin: 50px;
+.botao {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  .header-section .add:hover{
-    background-image: linear-gradient(to right, #b0dcee , #84c3d6);
-
-  }
-
-  .button {
-    background-color: #abd8e9;
-    color: black;
-    max-width: 270px;
+    background-color: #FAD02C;
     padding: 1rem;
-    margin: 0 auto;
-    border-radius: 10px;
-    transition: 0.5s ease;
-    font-size: 15px;
-    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
     border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 20px;
   }
 
-  .button:hover {
-    background-image: linear-gradient(to right, #b0dcee , #84c3d6);
-  }
-
-  .btn-icon{
-    margin-right: 10px;
-    height: 26px;
-    width: 26px;
-  }
-
-  .nav-link{
-    display: flex;
-    flex-direction: row;
-    align-content: end;
-    font-size: 1rem;
-    margin-top: 30px;
-    color: white;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-
-  .nav-link:hover{
-    text-decoration: underline;
+.botao:hover{
+    background-image: linear-gradient(to right, #5FC9DA, #00BFD6 );
   }
 
 
-  @media (max-width: 576px) {
-    .header-section .logo {
-      padding: 2rem;
-    }
-    .header-section p {
-      font-size: 1.5rem
-    }
-    .header-section .add{
-      margin: 40px 25px 40px 0px;
-      padding: 17px;
-    }
+.contact{
+  color: #F04578;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-right: 20px;
   }
-
-  @media (max-width: 768px) {
-    .header-section .logo {
-      width: 90%;
-    }
-    .header-section .imagem {
-      display: none;
-    }
-  }
-
 
