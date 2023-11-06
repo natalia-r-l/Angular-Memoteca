@@ -183,6 +183,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .load-more{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 216px) {
@@ -225,5 +226,14 @@ input[type="search"]::-webkit-search-cancel-button {
 .panel{
   flex-direction: column;
   align-items: center;
+}
+
+.header{
+  justify-content: center;
+  text-align: center;
+}
+
+.create-button{
+  margin-bottom: 40px;
 }
 }

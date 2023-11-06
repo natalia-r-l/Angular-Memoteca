@@ -184,15 +184,15 @@
         </div>
       </div>
     </div>
-    <div class="save">
-      <button (click)="cancelNote()" class="button-save">
+    <div class="d-flex justify-content-center mt-5">
+      <button (click)="cancelNote()" class="btn button-save">
         Cancelar
       </button>
       <button
         (click)="createNote()"
         [disabled]="!form.valid"
         [ngClass]="enableButton()"
-        class="button"
+        class="btn button"
       >
         Salvar
       </button>

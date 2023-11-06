@@ -29,7 +29,7 @@ h2 {
 }
 
 .model{
-  max-width: 250px
+  width: 300px
 }
 
 .actions {
@@ -224,5 +224,12 @@ input[type='radio']:checked+.custom-radio span {
 @media (min-width: 1200px) {
   .container {
       width: 1140px;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .container-radio{
+    flex-direction: column;
   }
 }
