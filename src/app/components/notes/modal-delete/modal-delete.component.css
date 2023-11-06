@@ -1,83 +1,68 @@
-.teste{
-  color:red;
-}
-
-.modal {
-  background: #fff;
-  border-radius: 20px;
-  min-width: 360px;
-  min-height: 150px;
-  position: fixed;
-  left: 50%;
-  padding: 24px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 11;
-  font-size: 1.2rem;
-  text-align: center;
-  padding-top: 50px;
-}
-
-.overlay {
-  background: #000;
+.container{
   height: 100vh;
-  left: 0;
-  opacity: 0.5;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 10;
+  padding: 100px;
 }
 
-.actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 30px;
+.card{
+  padding: 3rem;
 }
 
-/*
-.button {
-  margin: 5px;
-  margin-top: 70px;
-  width: 200px;
-}*/
+.delete-img{
+  width: 50%;
+  margin-bottom: 35px;
+}
 
 .button {
   background-color: #abd8e9;
   color: black;
   max-width: 270px;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 0.5s ease;
   font-size: 15px;
   cursor: pointer;
   border: none;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .button:hover {
   background-image: linear-gradient(to right, #b0dcee , #84c3d6);
 }
 
-.delete-notes {
-  padding: 10rem 0;
-}
-
 .button-danger{
   background: #ef233c;
+  color: white;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .button-danger:hover{
   background-image: linear-gradient(to right, #ef233c , #d90429);
 }
 
-@media screen and (max-width: 548px) {
-  .modal {
-    width: 90%;
-    min-width: 90%;
-    padding: 50px 12px 24px;
-    font-size: 1.2rem;
+@media (max-width: 360px) {
+  .container{
+    padding: 100px 20px 0px 20px;
+  }
+
+  .delete-img{
+    width: 80%;
+  }
+
+  .button-danger{
+    margin-left: 0px;
+  }
+
+  .card{
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 992px){
+  .delete-img{
+    width: 30%;
   }
 }

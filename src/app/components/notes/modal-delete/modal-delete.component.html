@@ -1,14 +1,16 @@
-<<section class="container delete-notes ff-inter">
-  <div class="modal">
-    <p>
-      O lembrete será deletado.
-    </p>
-    <p> Confirma a exclusão?</p>
-    <div class="actions">
-      <button class="button button-danger" (click)="deleteNote()">Excluir</button>
-      <button class="button" (click)="cancel()">Cancelar exclusão</button>
+<section class="container">
+  <div class="row card d-flex text-center ">
+    <div class="col-12">
+      <h2>
+        O lembrete será deletado.
+      </h2>
+      <h4> Você confirma a exclusão?</h4>
+      <img class="delete-img" src="../../../assets/imagens/delete.png" alt="Ilustração de pessoa jogando itens no lixo">
+      <div class="actions">
+        <button class="btn button" (click)="cancel()">Não. Cancelar a exclusão</button>
+        <button class="btn button-danger" (click)="deleteNote()">Sim, quero excluir</button>
+      </div>
     </div>
   </div>
-  <!-- <div class="overlay"></div> -->
 </section>
-<div class="teste">TESTEEEEEEEEEEEEEEEEEEE</div>
+
