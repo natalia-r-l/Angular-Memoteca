@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 .ff-inter { font-family: 'Inter', sans-serif; }
 
+
 .panel {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 1rem 0 2rem 0;
   padding: 0;
 }
 
@@ -181,6 +181,10 @@ input[type="search"]::-webkit-search-cancel-button {
   min-height: 450px;
 }
 
+.load-more{
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 216px) {
   .search-notes {
     width: 250px;
@@ -215,4 +219,11 @@ input[type="search"]::-webkit-search-cancel-button {
   .container {
       width: 1140px;
   }
+}
+
+@media (max-width: 768px){
+.panel{
+  flex-direction: column;
+  align-items: center;
+}
 }

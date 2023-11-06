@@ -40,7 +40,7 @@
     </button>
   </div>
 
-  <div class="content">
+  <div class="content row">
     <p class="ff-inter title">{{ title }}</p>
     <div class="panel" *ngIf="notesList.length > 0; else withoutNotes">
       <div *ngFor="let note of notesList">
@@ -53,6 +53,7 @@
     <app-load-notes-button
       [hasMoreNotes]="hasMoreNotes"
       (click)="loadMoreNotes()"
+      class="load-more"
     >
     </app-load-notes-button>
   </div>
