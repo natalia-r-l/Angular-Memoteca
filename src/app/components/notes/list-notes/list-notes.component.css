@@ -4,14 +4,14 @@
 
 .panel {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin: 1rem 0 2rem;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem 0 2rem 0;
+  padding: 0;
 }
 
 .container {
-  padding: 3rem 1rem 0rem 1rem;
+  padding: 3rem 0rem 0rem 0rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -30,13 +30,14 @@
   background-color: #abd8e9;
   color: black;
   max-width: 270px;
-  padding: 1rem;
+  padding: 0.6rem;
   margin: 0 auto;
   border-radius: 10px;
   transition: 0.5s ease;
   font-size: 15px;
   cursor: pointer;
   border: none;
+  font-weight: 700;
 }
 
 .button:hover {
@@ -152,23 +153,16 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .btn-icon{
-  margin-right: 10px;
-  width: 26px;
-  height: 26px;
+  margin-right: 2px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
 }
-
-.bi-plus-circle-fill{
-  margin-right: 10px;
-  width: 26px;
-  height: 26px;
-}
-
 
 .bi-search{
   width: 26px;
   height: 26px;
   margin-right: 10px;
-
 }
 
 .add{
@@ -184,7 +178,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .content{
   background-color: #F0F8FF;
   border-radius: 20px;
-  min-height: 350px;
+  min-height: 450px;
 }
 
 @media screen and (min-width: 216px) {

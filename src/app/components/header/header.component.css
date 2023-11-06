@@ -33,11 +33,68 @@
     background-image: linear-gradient(to right, #5FC9DA, #00BFD6 );
   }
 
+.offcanvas-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .contact{
   color: #F04578;
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-right: 20px;
   }
 
+p{
+  margin: 0;
+}
+
+.btn-section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-pink{
+  background-color: #F04578;
+  color: white;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-pink-link{
+  background-color: #F04578;
+  color: white;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 0.7rem;
+  text-decoration: none;
+}
+
+.bi-linkedin{
+  color: #0a66c2;
+  width: 80px;
+  margin: 30px 0px 50px 0px;
+}
+
+.offcanvas-title{
+  font-size: 30px;
+  color: #F04578;
+}
+
+.offcanvas-body{
+  font-size: 18px;
+  text-align: center;
+}
+
+.first-line{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.second-line{
+  font-weight: 400;
+  margin-bottom: 20px;
+}
