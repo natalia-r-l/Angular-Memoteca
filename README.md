@@ -10,7 +10,7 @@ Este projeto foi desenvolvido com base nos seguintes cursos da Alura, com a inst
 * Angular 14: aplique os conceitos e desenvolva seu primeiro CRUD. 
 * Angular 14: evoluindo a aplicação. 
 
-## Foram realizadas mudanças de layout, e de usabilidade em relação ao projeto original, para deixá-lo mais aderente ao meu perfil. As imagens abaixo mostram as diferenças entre a página inicial do projeto original e a do meu projeto: 
+## Foram realizadas mudanças de layout, e de usabilidade em relação ao projeto original. As imagens abaixo mostram as diferenças entre a página inicial do projeto original e a do meu projeto: 
 
 Projeto com minhas modificações: 
 
