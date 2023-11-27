@@ -1,10 +1,10 @@
 # Memoteca
 
-## Este projeto consiste em uma aplicação em Angular, versão 14, que realiza um CRUD (Create, Read, Update e Delete) de lembretes, os quais podem ser criados em três estilos diferentes (rosa, amarelo e azul). O projeto está hospedado no Vercel, e pode ser acessado por meio deste link: https://angular-memoteca-ghmmt6ztn-natalia-r-l.vercel.app/listNotes
+* Este projeto consiste em uma aplicação em Angular, versão 14, que realiza um CRUD (Create, Read, Update e Delete) de lembretes, os quais podem ser criados em três estilos diferentes (rosa, amarelo e azul). O projeto está hospedado no Vercel, e pode ser acessado por meio deste link: https://angular-memoteca-ghmmt6ztn-natalia-r-l.vercel.app/listNotes
 
 * Para que o usuário possa cadastrar e editar os lembretes, foram utilizados Reactive Forms, por meio da importação do ReactiveFormsModule no app.module. 
 * O Back End foi simulado por meio da JSON Server, que nada mais é do que um pacote NPM usado para simular uma API REST. Este é o link para o repositório do Back End: https://github.com/natalia-r-l/Memoteca-Fake-API
-* A comunidação entre Front e Back foi realizada por meio de requisições HTTP, com a injeção da classe HttpClient. 
+* A comunicação entre Front e Back foi realizada por meio de requisições HTTP, com a injeção da classe HttpClient. 
 
 Este projeto foi desenvolvido com base nos seguintes cursos da Alura, com a instrutora Nayanne Batista:
 * Angular 14: aplique os conceitos e desenvolva seu primeiro CRUD. 
